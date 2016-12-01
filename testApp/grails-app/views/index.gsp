@@ -1,77 +1,29 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
-
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
+    <title>Hello World</title>
 </head>
 <body>
     <content tag="nav">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                <li><a href="#">App version:
-                    <g:meta name="info.app.version"/></a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Grails version:
-                    <g:meta name="info.app.grailsVersion"/></a>
-                </li>
-                <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                </g:each>
-            </ul>
-        </li>
+	<a href="www.shu.ac.uk">SHU</a>
     </content>
 
-    <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-        </div>
-    </div>
 
     <div id="content" role="main">
         <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
-
+            <h1>System Architectures</h1>
+		<h2>Heading 1</h2>
             <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur semper arcu, vitae consequat ante bibendum sed. Aenean massa mauris, placerat nec ligula a, hendrerit sollicitudin nisi. Cras dapibus feugiat nunc, a suscipit lorem suscipit non. Aenean nec diam enim. Mauris semper elit eget magna vestibulum faucibus. Duis ullamcorper posuere hendrerit. Donec sit amet orci libero. Sed in lacus at enim malesuada pharetra. Duis pellentesque sollicitudin augue, in tempor erat volutpat quis. In efficitur nulla quis ex scelerisque commodo. Phasellus eleifend, dui et gravida hendrerit, diam lacus iaculis justo, vel ullamcorper erat felis at dolor. Vestibulum ac ante id dolor luctus porta eu at sem. Suspendisse eu ultrices diam. Donec eget justo eget nunc gravida dapibus. Vestibulum maximus posuere volutpat.
             </p>
-
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
-            </div>
+		<h2>Heading 2</h2>
+            <p>
+                Duis vel ornare libero, at feugiat quam. Curabitur molestie felis vel feugiat consectetur. Nullam aliquam eros eget lobortis ornare. Nunc non malesuada nunc, sed auctor quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis egestas diam. Phasellus sodales interdum sem, nec tristique elit tempor non.
+            </p>
+		<h2>Heading 3</h2>
+            <p>
+                Morbi dapibus viverra lorem. Curabitur tincidunt congue commodo. Nulla commodo efficitur ex nec vestibulum. Nulla facilisi. Praesent varius turpis eu vehicula ornare. In eu sodales massa, non bibendum elit. Pellentesque sollicitudin fringilla eros, quis volutpat lorem volutpat non. Duis pretium risus nec ex pretium, ac scelerisque nulla efficitur. Sed ipsum mauris, feugiat non urna vel, posuere sodales nunc.
+            </p>
         </section>
     </div>
 
