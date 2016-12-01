@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>Hello World</title>
+    <style>
+	body { background-color: red; }
+	h1 { font-family: "arial"; color:black; }
+	h2 { font-family: "arial"; color: blue; }
+	p { font-family: "arial"; color: white; }
+    </style>
 </head>
 <body>
     <content tag="nav">
